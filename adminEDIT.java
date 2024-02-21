@@ -1,27 +1,24 @@
 package AttendanceDatabase;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
 import java.awt.Color;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-
+import java.awt.EventQueue;
 import java.awt.Font;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.awt.event.ActionEvent;
-import java.awt.Window.Type;
+
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 public class adminEDIT extends JFrame {
 
@@ -134,7 +131,7 @@ public class adminEDIT extends JFrame {
 		JComboBox selectCourse = new JComboBox();
 		selectCourse.setForeground(new Color(0, 0, 128));
 		selectCourse.setModel(new DefaultComboBoxModel(new String[] { "SELECT COURSE :", "BS ENGINEERING",
-				"BS CRIMINOLOGY", "BS ACCOUNTANCY", "BS EDUCATION", "BS NURSING" }));
+				"BS CRIMINOLOGY", "BS ACCOUNTANCY", "BSEDUCATION", "BS NURSING" }));
 		selectCourse.setBounds(205, 182, 148, 21);
 		contentPane.add(selectCourse);
 
